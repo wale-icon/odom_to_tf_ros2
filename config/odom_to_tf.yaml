@@ -1,6 +1,6 @@
 odom_to_tf:
     ros__parameters:
-        odom_topic: "/odom/perfect"
-        frame_id: "world"
-        child_frame_id: "base_link"
-        use_sim_time: True
+        odom_topic: "/fixposition/odometry_enu" # "/odom/perfect"
+        frame_id: "odom" #"world"
+        child_frame_id: "gps_link" #"base_link"
+        use_sim_time: False #True
